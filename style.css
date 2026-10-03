@@ -1,0 +1,939 @@
+/* ==================== GLOBAL RESET ==================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==================== BODY ==================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4fbff;
+    color: #173f5f;
+}
+
+
+/* ==================== LINKS & BUTTONS ==================== */
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* ==================== NAVBAR ==================== */
+
+.navbar {
+    height: 74px;
+    background: #fff;
+    border-bottom: 1px solid #dceff8;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 20;
+}
+
+
+/* ==================== LOGO ==================== */
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    color: #0878c9;
+    cursor: pointer;
+}
+
+
+.logo span {
+    display: block;
+    font-size: 9px;
+    color: #71899b;
+    font-weight: 600;
+}
+
+
+/* ==================== NAVIGATION ==================== */
+
+.navbar nav {
+    display: flex;
+    gap: 24px;
+}
+
+
+.navbar nav a:hover {
+    color: #08a9ef;
+}
+
+
+/* ==================== NAV RIGHT ==================== */
+
+.nav-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.nav-right select,
+.outline {
+    padding: 10px 12px;
+
+    border: 1px solid #cfe8f4;
+    border-radius: 10px;
+
+    background: #fff;
+    color: #173f5f;
+}
+
+
+/* ==================== BUTTONS ==================== */
+
+.primary-btn,
+.full-btn,
+.search-btn {
+    background: #08a9ef;
+    color: #fff;
+
+    padding: 13px 22px;
+
+    border-radius: 12px;
+    font-weight: 800;
+
+    border: none;
+}
+
+
+.login-btn {
+    background: #0878c9;
+    color: #fff;
+
+    padding: 11px 20px;
+
+    border-radius: 10px;
+    font-weight: 800;
+
+    border: none;
+}
+
+
+.secondary-btn {
+    padding: 13px 22px;
+
+    border-radius: 12px;
+
+    border: 1px solid #bfe4f4;
+
+    background: #fff;
+    color: #0878c9;
+
+    font-weight: 800;
+}
+
+
+/* ==================== HERO SECTION ==================== */
+
+.hero {
+    min-height: 540px;
+
+    padding: 70px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(
+        135deg,
+        #fff,
+        #e8f8ff
+    );
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.small-title,
+.section-heading p,
+.offers-section p {
+    color: #08a9ef;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    font-size: 12px;
+}
+
+
+.hero h1 {
+    font-size: 64px;
+
+    line-height: 1.02;
+
+    margin: 16px 0;
+}
+
+
+.hero h1 span {
+    color: #08a9ef;
+}
+
+
+.hero-text {
+    font-size: 18px;
+
+    color: #71899b;
+
+    line-height: 1.7;
+}
+
+
+.hero-buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+
+/* ==================== HERO CARD ==================== */
+
+.hero-card {
+    width: 390px;
+    height: 330px;
+
+    border-radius: 35px;
+
+    background: linear-gradient(
+        145deg,
+        #08a9ef,
+        #0878c9
+    );
+
+    position: relative;
+
+    display: grid;
+    place-items: center;
+
+    color: #fff;
+}
+
+
+.travel-circle {
+    width: 210px;
+    height: 210px;
+
+    border: 2px solid #ffffff70;
+
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 32px;
+    font-weight: 900;
+}
+
+
+.floating-card {
+    position: absolute;
+
+    left: -35px;
+    bottom: 35px;
+
+    background: #fff;
+
+    color: #173f5f;
+
+    padding: 15px 18px;
+
+    border-radius: 16px;
+
+    display: flex;
+
+    gap: 12px;
+
+    box-shadow:
+        0 15px 35px #173f5f25;
+}
+
+
+.floating-card p {
+    font-size: 12px;
+
+    color: #71899b;
+
+    margin-top: 3px;
+}
+
+
+/* ==================== SEARCH BOX ==================== */
+
+.search-box {
+    background: #fff;
+
+    margin: -35px auto 0;
+
+    width: 86%;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 18px 45px #173f5f18;
+
+    padding: 20px;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+.search-tabs {
+    display: flex;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+
+    overflow: auto;
+}
+
+
+.search-tabs button {
+    padding: 10px 17px;
+
+    border-radius: 10px;
+
+    background: #f0f9fd;
+
+    color: #0878c9;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    border: none;
+}
+
+
+.search-tabs button.active {
+    background: #08a9ef;
+
+    color: #fff;
+}
+
+
+/* ==================== SEARCH FIELDS ==================== */
+
+.search-fields {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        30px
+        1fr
+        1fr
+        auto;
+
+    gap: 10px;
+
+    align-items: end;
+}
+
+
+.field label {
+    display: block;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    color: #71899b;
+
+    margin: 0 0 6px;
+}
+
+
+.field input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #cfe8f4;
+
+    border-radius: 10px;
+}
+
+
+.swap {
+    font-size: 24px;
+
+    color: #08a9ef;
+
+    text-align: center;
+
+    padding-bottom: 8px;
+
+    cursor: pointer;
+}
+
+
+/* ==================== SECTIONS ==================== */
+
+.section {
+    padding: 80px 7%;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.section-heading h2 {
+    font-size: 38px;
+
+    margin: 10px 0;
+}
+
+
+.section-heading span {
+    color: #71899b;
+}
+
+
+/* ==================== SERVICE GRID ==================== */
+
+.service-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+.service-card {
+    background: #fff;
+
+    border: 1px solid #dceff8;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+
+.service-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px #173f5f14;
+}
+
+
+.service-icon {
+    font-size: 35px;
+}
+
+
+.service-card h3 {
+    margin: 14px 0 8px;
+}
+
+
+.service-card p {
+    color: #71899b;
+
+    font-size: 14px;
+
+    min-height: 40px;
+}
+
+
+.service-card span {
+    display: block;
+
+    color: #08a9ef;
+
+    font-weight: 900;
+
+    margin-top: 15px;
+}
+
+
+/* ==================== DESTINATIONS ==================== */
+
+.destination-section {
+    background: #fff;
+}
+
+
+.destination-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.destination-card {
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #fff;
+
+    box-shadow:
+        0 10px 30px #173f5f14;
+
+    border: 1px solid #e1f0f6;
+}
+
+
+.destination-card img {
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+}
+
+
+.destination-info {
+    padding: 17px;
+}
+
+
+.destination-info p {
+    color: #71899b;
+
+    font-size: 13px;
+
+    margin: 4px 0 12px;
+}
+
+
+.destination-info strong {
+    color: #0878c9;
+}
+
+
+.destination-info button {
+    display: block;
+
+    margin-top: 13px;
+
+    width: 100%;
+
+    padding: 11px;
+
+    background: #eaf8ff;
+
+    color: #0878c9;
+
+    border-radius: 10px;
+
+    font-weight: 800;
+
+    border: none;
+}
+
+
+/* ==================== OFFERS ==================== */
+
+.offers-section {
+    margin: 30px 7% 80px;
+
+    padding: 50px;
+
+    background: linear-gradient(
+        120deg,
+        #0878c9,
+        #08a9ef
+    );
+
+    border-radius: 25px;
+
+    color: #fff;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.offers-section p {
+    color: #fff;
+}
+
+
+.offers-section h2 {
+    font-size: 42px;
+
+    margin: 10px 0;
+}
+
+
+.offers-section span {
+    color: #e8f8ff;
+}
+
+
+.offer-code {
+    background: #fff;
+
+    color: #0878c9;
+
+    padding: 28px 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+
+.offer-code span,
+.offer-code small {
+    display: block;
+}
+
+
+.offer-code strong {
+    font-size: 28px;
+
+    display: block;
+
+    margin: 8px 0;
+}
+
+
+.offers-section .primary-btn {
+    background: #fff;
+
+    color: #0878c9;
+}
+
+
+/* ==================== MODAL ==================== */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: #173f5f70;
+
+    z-index: 100;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+.modal.show {
+    display: flex;
+}
+
+
+.modal-card {
+    width: 420px;
+
+    max-width: 100%;
+
+    background: #fff;
+
+    border-radius: 22px;
+
+    padding: 32px;
+
+    position: relative;
+}
+
+
+/* ==================== CLOSE BUTTON ==================== */
+
+.close {
+    position: absolute;
+
+    right: 18px;
+
+    top: 15px;
+
+    background: none;
+
+    font-size: 28px;
+
+    color: #71899b;
+
+    border: none;
+}
+
+
+/* ==================== MODAL CONTENT ==================== */
+
+.modal-logo {
+    font-size: 30px;
+
+    font-weight: 900;
+
+    color: #0878c9;
+}
+
+
+.modal-tagline {
+    font-size: 10px;
+
+    color: #71899b;
+
+    margin-bottom: 25px;
+}
+
+
+.modal-card h2 {
+    font-size: 27px;
+
+    margin-bottom: 8px;
+}
+
+
+.modal-card > p:not(.modal-tagline) {
+    color: #71899b;
+
+    margin-bottom: 18px;
+}
+
+
+.modal-card input {
+    display: block;
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin: 10px 0;
+
+    border: 1px solid #cfe8f4;
+
+    border-radius: 10px;
+}
+
+
+.full-btn {
+    width: 100%;
+
+    margin-top: 8px;
+}
+
+
+.signup-text {
+    text-align: center;
+
+    margin-top: 18px !important;
+}
+
+
+.signup-text span {
+    color: #08a9ef;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+/* ==================== FOOTER ==================== */
+
+footer {
+    background: #fff;
+
+    border-top: 1px solid #dceff8;
+
+    padding: 50px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+footer h4 {
+    margin-bottom: 15px;
+}
+
+
+footer a {
+    display: block;
+
+    color: #71899b;
+
+    margin: 10px 0;
+
+    font-size: 14px;
+}
+
+
+.footer-logo h2 {
+    color: #0878c9;
+}
+
+
+.footer-logo p {
+    font-size: 11px;
+
+    color: #71899b;
+
+    margin-top: 4px;
+}
+
+
+/* ==================== PANEL ==================== */
+
+.panel {
+    max-width: 900px;
+
+    margin: auto;
+
+    background: #fff;
+
+    border: 1px solid #dceff8;
+
+    border-radius: 22px;
+
+    padding: 30px;
+}
+
+
+/* ==================== TABLET RESPONSIVE ==================== */
+
+@media (max-width: 900px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+
+    .hero {
+        padding: 50px 6%;
+    }
+
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+
+    .hero-card {
+        display: none;
+    }
+
+
+    .service-grid,
+    .destination-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .search-fields {
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+
+    .swap {
+        display: none;
+    }
+
+
+    footer {
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+
+    .offers-section {
+        flex-direction: column;
+
+        gap: 30px;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+/* ==================== MOBILE RESPONSIVE ==================== */
+
+@media (max-width: 560px) {
+
+    .service-grid,
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .search-fields {
+        grid-template-columns: 1fr;
+    }
+
+
+    .offers-section {
+        margin-left: 4%;
+
+        margin-right: 4%;
+    }
+
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+}
